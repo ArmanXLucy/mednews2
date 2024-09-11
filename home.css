@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url('./IMG_01.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.nav_bar {
+  background-color: aqua;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+}
+
+.nav_bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav_bar ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.nav_bar ul li a {
+  color: navy;
+  text-decoration: none;
+}
+
+.nav_bar ul li a:hover {
+  color: white;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown_content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.dropdown_content ul li {
+  padding: 20px;
+  border-bottom: 0px solid #ccc;
+}
+
+.dropdown_content ul li a {
+  color: navy;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.dropdown_content ul li:hover {
+  background-color: seagreen;
+}
+.dropdown_content ul li a:hover {
+  color: navy;
+}
+
+.nav_bar ul li:hover .dropdown_content {
+  display: block;
+}
+
+.button{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  padding-top: 450px;
+}
+
+.kolkata{
+  border: 3px solid;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right:80px;
+  border-radius: 10px;
+}
+
+.Mumbai{
+  border: 3px solid;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right:80px;
+  border-radius: 10px;
+}
+
+.DELHI{
+  border: 3px solid;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right:80px;
+  border-radius: 10px;
+}
